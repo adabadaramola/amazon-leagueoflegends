@@ -1,0 +1,55 @@
+Title: Guide to Using the Amazon and Riot Games Account Automation Script
+
+Introduction:
+This guide will walk you through the functionality of a Python script that automates the process of logging into Amazon accounts, claiming rewards, and linking them to Riot Games accounts. Please note that this script interacts with user accounts on these platforms, so always ensure you have the necessary permissions and rights before using it.
+
+Prerequisites:
+1. You should have Python installed on your computer.
+2. Install the required Python libraries by running the following command:
+   ```
+   pip install selenium undetected-chromedriver
+   ```
+
+Script Overview:
+The script uses Selenium, a web automation tool, to perform the following actions:
+- Log into Amazon accounts.
+- Claim rewards on Amazon (if available).
+- Link Amazon accounts to Riot Games accounts.
+
+Step-by-Step Guide:
+
+1. Download the Script:
+   - Download the provided Python script to your computer.
+
+2. Prepare Your Account Information:
+   - Create a text file containing the account information for Amazon and Riot Games accounts. Each line should follow this format: `AmazonEmail:AmazonPassword:RiotUsername:RiotPassword`.
+
+3. Run the Script:
+   - Open your command prompt or terminal.
+   - Navigate to the directory where you saved the script and your account information file.
+
+4. Execute the Script:
+   - Run the script using the following command:
+     ```
+     python script_filename.py
+     ```
+
+5. Script Execution:
+   - The script will prompt you to enter the name of the account information file (created in Step 2).
+
+6. Thread Configuration:
+   - Enter the number of threads you want to use for parallel execution. This determines how many accounts will be processed simultaneously. Be cautious not to overload the system.
+
+7. Script Execution Progress:
+   - The script will start processing accounts concurrently, automating the login and linking process for each.
+   - If any errors occur during the process, they will be logged in a file named "result.txt."
+
+8. Completion:
+   - Once all accounts have been processed, the script will wait for you to press Enter to exit.
+
+Important Notes:
+- Ensure that you have the necessary permissions and rights to perform actions on your Amazon and Riot Games accounts using automation.
+- Be cautious with the number of threads you use to avoid overloading your system or causing disruptions to the platforms.
+
+Conclusion:
+This script provides a convenient way to automate the process of linking Amazon accounts to Riot Games accounts and claiming rewards. Always use it responsibly and in accordance with the terms of service of the platforms involved.
